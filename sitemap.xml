@@ -23,6 +23,13 @@
   </url>
   
   <url>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/new-microsoft-edge/</loc>
+    
+    <lastmod>2025-10-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/pac/</loc>
     
     <lastmod>2025-10-24</lastmod>
@@ -51,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/new-microsoft-edge/</loc>
-    
-    <lastmod>2025-10-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/ie-mode-faq/</loc>
     
     <lastmod>2025-10-24</lastmod>
@@ -73,6 +73,13 @@
   
   <url>
     <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/</loc>
+    
+    <lastmod>2025-10-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-deploy-edge-extensions/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -100,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-deploy-edge-extensions/</loc>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/flash/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -108,13 +115,6 @@
   
   <url>
     <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/guidelines-for-migrating-from-ie-to-microsoft-edge/</loc>
-    
-    <lastmod>2025-10-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/flash/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -156,6 +156,13 @@
   </url>
   
   <url>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/cross-protected-mode-cookie/</loc>
+    
+    <lastmod>2025-10-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/dotnet-framework-tls12/</loc>
     
     <lastmod>2025-10-24</lastmod>
@@ -163,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/cross-protected-mode-cookie/</loc>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/SkypeMeetingWithEdge/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -178,13 +185,6 @@
   
   <url>
     <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/ProxySettings/</loc>
-    
-    <lastmod>2025-10-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/SkypeMeetingWithEdge/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/IEMode/</loc>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/IEtoEdgeRedirection/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/IEtoEdgeRedirection/</loc>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/IEMode/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -247,14 +247,28 @@
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/FileProtocol/</loc>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/HighMemoryUsage/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/HighMemoryUsage/</loc>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Deploy-Edge/</loc>
+    
+    <lastmod>2025-10-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/</loc>
+    
+    <lastmod>2025-10-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/FileProtocol/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
@@ -276,20 +290,6 @@
   
   <url>
     <loc>https://microsoft.github.io/jpbrowsers/general/welcome/</loc>
-    
-    <lastmod>2025-10-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Deploy-Edge/</loc>
-    
-    <lastmod>2025-10-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/</loc>
     
     <lastmod>2025-10-24</lastmod>
     
