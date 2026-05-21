@@ -16,13 +16,13 @@
 <meta property="og:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/premaster-linux.png">
 <meta property="og:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/clear-browsecache-linux.png">
 <meta property="article:published_time" content="2022-09-28T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-13T06:05:18.994Z">
+<meta property="article:modified_time" content="2026-05-21T04:56:53.485Z">
 <meta property="article:author" content="Developer Support Internet Japan">
-<meta property="article:tag" content="Microsoft Edge">
 <meta property="article:tag" content="Chromium">
-<meta property="article:tag" content="ログ採取">
-<meta property="article:tag" content="tcpdump">
 <meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Microsoft Edge">
+<meta property="article:tag" content="tcpdump">
+<meta property="article:tag" content="ログ採取">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/premaster-linux.png">
   
@@ -43,7 +43,7 @@
   
 <link rel="stylesheet" href="../../css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
   <div id="container">
@@ -61,7 +61,7 @@
         
           <a class="main-nav-link" href="/jpbrowsers/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -109,23 +109,23 @@
         
         <a href="https://github.com/microsoft/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+cdcb52ab-8d95-5478-a0ee-c138761d134a%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BMicrosoft+Edge+on+Linux+%E3%81%A7+SSL+Key+%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%97%E3%81%A6%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%5D%28https%3A%2F%2Fmicrosoft.github.io%2Fjpbrowsers%2Finternet-explorer-microsoft-edge%2FEdge-Linux-sslkeylog%2F%29%0A*+Content+Source%3A+%5Barticles%2Finternet-explorer-microsoft-edge%2FEdge-Linux-sslkeylog.md%5D%28https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fblob%2Fmain%2Farticles%2Finternet-explorer-microsoft-edge%2FEdge-Linux-sslkeylog.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/" data-id="cmhx179830005w53pf3b73goj" class="article-share-link">共有</a>
+        <a data-url="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/Edge-Linux-sslkeylog/" data-id="cuidK3cXZNC5ewvIttbbpZWBG" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは。Developer Support チームの大嶋です。</p>
-<p>実は Microsoft Edge は Linux 版もあることはご存じでしょうか？<br>例えば <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/edge/business/download">Edge Download サイト</a> の Linux の欄からもダウンロードできます。</p>
+<p>実は Microsoft Edge は Linux 版もあることはご存じでしょうか？<br>例えば <a href="https://www.microsoft.com/en-us/edge/business/download">Edge Download サイト</a> の Linux の欄からもダウンロードできます。</p>
 <p>今回はその Microsoft Edge の Linux 版 Microsoft Edge on Linux  (今回は Ubuntu を想定) で動作する Web アプリケーションにて、例えば事前に ssllogkey を設定し、ネットワークに関連する調査に活用できるネットワークトレースを Linux 上で取得する方法等をご紹介いたします。なお、実際のトラブルシューティングの際は、同時に <a href="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/">net-export</a> の取得も併せてご実施ください。</p>
 <p>なお、本方法では多くの HTTPS の通信を調査のために見ることも可能であると想定されますが、TLS のバージョンや暗号化の種類等によっては正常に復号できない可能性もあり、全ての HTTPS 通信を分析が可能であることを保証するものではありません。</p>
 <hr>
 <p><font color="red"> Edge ブラウザーのキャッシュが利用されてキャプチャーに記録されないことを避けるために、InPrivate ブラウズをご利用いただく方法をご案内していますが、InPrivate ブラウズをご利用いただけない場合には、ログ取得前にブラウザーのキャッシュを下部の補足に記載の方法で必ずすべて消去して実施ください。</font></p>
 <h2 id="0-前提"><a href="#0-前提" class="headerlink" title="0. 前提"></a>0. 前提</h2><ul>
 <li><p>Ubuntu 上で 再現手順が確立されており、Chromium ベースの Microsoft Edge on Linux にてネットワークに関する事象が意図的に再現可能</p>
-<p>Linux 版の新しい Microsoft Edge ブラウザーダウンロード | Microsoft<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/ja-jp/edge?form=MA13DE&amp;OCID=MA13DE">https://www.microsoft.com/ja-jp/edge?form=MA13DE&amp;OCID=MA13DE</a></p>
+<p>Linux 版の新しい Microsoft Edge ブラウザーダウンロード | Microsoft<br><a href="https://www.microsoft.com/ja-jp/edge?form=MA13DE&OCID=MA13DE">https://www.microsoft.com/ja-jp/edge?form=MA13DE&amp;OCID=MA13DE</a></p>
 </li>
 <li><p>Wireshark がダウンロード済み (任意)</p>
-<p>Download Wireshark<br><a target="_blank" rel="noopener" href="https://www.wireshark.org/download.html">https://www.wireshark.org/download.html</a></p>
+<p>Download Wireshark<br><a href="https://www.wireshark.org/download.html">https://www.wireshark.org/download.html</a></p>
 </li>
 </ul>
 <hr>
@@ -140,7 +140,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:~$ mkdir tmp</span><br></pre></td></tr></table></figure>
 
 <ol start="4">
-<li>ターミナルにて上記作成のディレクトリに移動し、以下の echo コマンドで上記で作成した任意のディレクトリ (ここでは ~/tmp と仮定) に空の新規ファイルを作成します。作成後は該当ディレクトリで ls コマンド等で正常に sslkey.log ファイルが存在していることを念の為確認下さい。</li>
+<li>ターミナルにて上記作成のディレクトリに移動し、以下の echo コマンドで上記で作成した任意のディレクトリ (ここでは ~&#x2F;tmp と仮定) に空の新規ファイルを作成します。作成後は該当ディレクトリで ls コマンド等で正常に sslkey.log ファイルが存在していることを念の為確認下さい。</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:~/tmp$ echo &gt; sslkey.log</span><br></pre></td></tr></table></figure>
 
@@ -148,7 +148,7 @@
 <br />
 
 <hr>
-<h2 id="2-ユーザー環境変数の設定"><a href="#2-ユーザー環境変数の設定" class="headerlink" title="2. ユーザー環境変数の設定"></a>2. ユーザー環境変数の設定</h2><p>再ログイン時に自動的に SSLKEYLOGFILE の環境変数を設定するように ~/.bash_profile ファイルに以下の内容で追記で指定しておきます。</p>
+<h2 id="2-ユーザー環境変数の設定"><a href="#2-ユーザー環境変数の設定" class="headerlink" title="2. ユーザー環境変数の設定"></a>2. ユーザー環境変数の設定</h2><p>再ログイン時に自動的に SSLKEYLOGFILE の環境変数を設定するように ~&#x2F;.bash_profile ファイルに以下の内容で追記で指定しておきます。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export SSLKEYLOGFILE=~/tmp/sslkey.log</span><br></pre></td></tr></table></figure>
 
 <p>その後、Ubutsu OS を再起動します。</p>
@@ -179,10 +179,10 @@
 <p>4-5. もし私共サポートから本 Blog による情報採取をご依頼された場合は、.pcap ファイルと sslkey.log の 2 つ両方とも提供します。</p>
 <p>※ なお、Wireshark 自体のツールや tcpdump コマンドに関するトラブルシューティングや操作方法等のご質問は 3 rd party 製品となる為、Microsoft の技術サポートでは承ることができませんのでご了承ください。</p>
 <hr>
-<h2 id="5-後片付け"><a href="#5-後片付け" class="headerlink" title="5. 後片付け"></a>5. 後片付け</h2><p>もし不要であれば、先の手順で追加した ~/.bash_profile で設定した SSLKEYLOGFILE の export コマンドを削除しておきます。</p>
+<h2 id="5-後片付け"><a href="#5-後片付け" class="headerlink" title="5. 後片付け"></a>5. 後片付け</h2><p>もし不要であれば、先の手順で追加した ~&#x2F;.bash_profile で設定した SSLKEYLOGFILE の export コマンドを削除しておきます。</p>
 <hr>
 <h2 id="補足-ブラウザーのキャッシュ消去について"><a href="#補足-ブラウザーのキャッシュ消去について" class="headerlink" title="補足 : ブラウザーのキャッシュ消去について"></a>補足 : ブラウザーのキャッシュ消去について</h2><ol>
-<li><p>Microsoft Edge on Linux にて edge://settings/clearBrowserData を開きます。</p>
+<li><p>Microsoft Edge on Linux にて edge:&#x2F;&#x2F;settings&#x2F;clearBrowserData を開きます。</p>
 </li>
 <li><p>以下のように設定し、[今すぐクリア] ボタンをクリックします。</p>
 </li>
@@ -312,7 +312,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2025 Developer Support Internet Japan<br>
+      &copy; 2026 Developer Support Internet Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

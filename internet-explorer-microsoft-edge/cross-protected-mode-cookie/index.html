@@ -14,10 +14,10 @@
 <meta property="og:description" content="こんにちは。本日は、最近お問い合わせをいただくことの多い気のする、何かと話題の Cookie についてのお話です。とはいっても、SameSite の話ではないです。Internet Explorer をご利用の際に良く陥りがちな問題についてお話しします。 Cookie が送信されない！単一のドメイン、ホストのみで遷移するような仕組みの Web サイトでは問題となることはないですが、最近の Web">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2020-03-26T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-13T06:05:19.034Z">
+<meta property="article:modified_time" content="2026-05-21T04:56:53.521Z">
 <meta property="article:author" content="Developer Support Internet Japan">
-<meta property="article:tag" content="Internet Explorer">
 <meta property="article:tag" content="Cookie">
+<meta property="article:tag" content="Internet Explorer">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Browsers Support Team Blog" type="application/atom+xml">
@@ -37,7 +37,7 @@
   
 <link rel="stylesheet" href="../../css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
   <div id="container">
@@ -55,7 +55,7 @@
         
           <a class="main-nav-link" href="/jpbrowsers/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -103,7 +103,7 @@
         
         <a href="https://github.com/microsoft/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+9ba7dde0-e564-5c26-9601-e9fb7405d952%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E4%BF%9D%E8%AD%B7%E3%83%A2%E3%83%BC%E3%83%89%E3%82%92%E3%81%BE%E3%81%9F%E3%81%84%E3%81%A0+Cookie+%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fmicrosoft.github.io%2Fjpbrowsers%2Finternet-explorer-microsoft-edge%2Fcross-protected-mode-cookie%2F%29%0A*+Content+Source%3A+%5Barticles%2Finternet-explorer-microsoft-edge%2Fcross-protected-mode-cookie.md%5D%28https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fblob%2Fmain%2Farticles%2Finternet-explorer-microsoft-edge%2Fcross-protected-mode-cookie.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/cross-protected-mode-cookie/" data-id="cmhx1798o000yw53p6j6qap1u" class="article-share-link">共有</a>
+        <a data-url="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/cross-protected-mode-cookie/" data-id="cuid9IZz4FqnHFepURLSCbSam" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -112,7 +112,7 @@
 <h2 id="Cookie-が送信されない！"><a href="#Cookie-が送信されない！" class="headerlink" title="Cookie が送信されない！"></a>Cookie が送信されない！</h2><p>単一のドメイン、ホストのみで遷移するような仕組みの Web サイトでは問題となることはないですが、最近の Web サイトでは複数のサービスと連携をとるような複雑な構成をしていることが多くなってきました。<br>このように、異なるドメイン、ホスト間を行き来するような仕組みの Web サイトの場合、まれに Cookie が送信されない！という事象に出くわすことがあります。</p>
 <p>これによって、例えば「認証したはずなのに最初のページに戻っちゃう」や「Cookie に情報を保存したはずなのに保存されていない」といった事象が発生する場合があります。<br>しかも、、、Microsoft Edge や Google Chrome では問題ないのに Internet Explorer だけで起きる…という状況となると、いよいよ「なんで？」という状況となります。</p>
 <h2 id="Internet-Explorer-オリジナルの機能の影響"><a href="#Internet-Explorer-オリジナルの機能の影響" class="headerlink" title="Internet Explorer オリジナルの機能の影響"></a>Internet Explorer オリジナルの機能の影響</h2><p>Internet Explorer オリジナルの機能として、「<strong>保護モード</strong>」という機能があります。<br>保護モードの詳細については <a href="../protected-mode/">こちら</a> を参照いただきたいですが、Windows Vista 上の Internet Explorer 7 で初めて搭載された Internet Explorer のセキュリティ機能の一つです。</p>
-<h3 id="どうしてこの機能が-Cookie-の送信に影響するのか"><a href="#どうしてこの機能が-Cookie-の送信に影響するのか" class="headerlink" title="どうしてこの機能が Cookie の送信に影響するのか"></a>どうしてこの機能が Cookie の送信に影響するのか</h3><p>答えは、保護モードの違い による Cookie の取り扱いが影響します。<br>具体的には、保護モードの有効 / 無効による Cookie の保存先の違いが影響します。</p>
+<h3 id="どうしてこの機能が-Cookie-の送信に影響するのか"><a href="#どうしてこの機能が-Cookie-の送信に影響するのか" class="headerlink" title="どうしてこの機能が Cookie の送信に影響するのか"></a>どうしてこの機能が Cookie の送信に影響するのか</h3><p>答えは、保護モードの違い による Cookie の取り扱いが影響します。<br>具体的には、保護モードの有効 &#x2F; 無効による Cookie の保存先の違いが影響します。</p>
 <p>Cookie は下記のいずれかの方法で発行／作成されますが、これら以外にブラウザーが勝手に Cookie を作成することはありません。</p>
 <ul>
 <li>Set-Cookie ヘッダー</li>
@@ -261,7 +261,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2025 Developer Support Internet Japan<br>
+      &copy; 2026 Developer Support Internet Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

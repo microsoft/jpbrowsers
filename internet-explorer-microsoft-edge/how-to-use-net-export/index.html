@@ -6,12 +6,12 @@
   
   <title>net-export の使い方 | Japan Browsers Support Team Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="みなさんこんにちは。日本マイクロソフトの IE&#x2F;Edge サポートチームです。 今回は Chromium の機能である net-export を使用して、Chromium Edge のネットワーク レベルのイベントや状態に関する詳細情報を確認する方法を紹介します。サポートにお問い合せいただいたときにも、今回の手順でログを取得いただくこともありますので、以下を参考にしていただければと思います。  ロ">
+  <meta name="description" content="みなさんこんにちは。日本マイクロソフトの IE&#x2F;Edge サポートチームです。 今回は Chromium の機能である net-export を使用して、Chromium Edge のネットワーク レベルのイベントや状態に関する詳細情報を確認する方法を紹介します。サポートにお問い合せいただいたときにも、今回の手順でログを取得いただくこともありますので、以下を参考にしていただければと思いま">
 <meta property="og:type" content="article">
 <meta property="og:title" content="net-export の使い方">
 <meta property="og:url" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/index.html">
 <meta property="og:site_name" content="Japan Browsers Support Team Blog">
-<meta property="og:description" content="みなさんこんにちは。日本マイクロソフトの IE&#x2F;Edge サポートチームです。 今回は Chromium の機能である net-export を使用して、Chromium Edge のネットワーク レベルのイベントや状態に関する詳細情報を確認する方法を紹介します。サポートにお問い合せいただいたときにも、今回の手順でログを取得いただくこともありますので、以下を参考にしていただければと思います。  ロ">
+<meta property="og:description" content="みなさんこんにちは。日本マイクロソフトの IE&#x2F;Edge サポートチームです。 今回は Chromium の機能である net-export を使用して、Chromium Edge のネットワーク レベルのイベントや状態に関する詳細情報を確認する方法を紹介します。サポートにお問い合せいただいたときにも、今回の手順でログを取得いただくこともありますので、以下を参考にしていただければと思いま">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/net-export1.png">
 <meta property="og:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/net-export2.png">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/net-export-view1.png">
 <meta property="og:image" content="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/net-export-view2.png">
 <meta property="article:published_time" content="2021-05-20T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-13T06:05:19.064Z">
+<meta property="article:modified_time" content="2026-05-21T04:56:53.541Z">
 <meta property="article:author" content="Developer Support Internet Japan">
 <meta property="article:tag" content="Microsoft Edge">
 <meta property="article:tag" content="ログ採取">
@@ -45,7 +45,7 @@
   
 <link rel="stylesheet" href="../../css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.2"></head>
 
 <body>
   <div id="container">
@@ -63,7 +63,7 @@
         
           <a class="main-nav-link" href="/jpbrowsers/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -111,16 +111,16 @@
         
         <a href="https://github.com/microsoft/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+a9935870-e603-5faa-a9b1-70cef0f07b81%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5Bnet-export+%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%5D%28https%3A%2F%2Fmicrosoft.github.io%2Fjpbrowsers%2Finternet-explorer-microsoft-edge%2Fhow-to-use-net-export%2F%29%0A*+Content+Source%3A+%5Barticles%2Finternet-explorer-microsoft-edge%2Fhow-to-use-net-export.md%5D%28https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fblob%2Fmain%2Farticles%2Finternet-explorer-microsoft-edge%2Fhow-to-use-net-export.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/" data-id="cmhx17998001qw53p6fzf9p9h" class="article-share-link">共有</a>
+        <a data-url="https://microsoft.github.io/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/" data-id="cuid8JTIACMHFkCemPdGDkmXM" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>みなさんこんにちは。日本マイクロソフトの IE/Edge サポートチームです。</p>
+        <p>みなさんこんにちは。日本マイクロソフトの IE&#x2F;Edge サポートチームです。</p>
 <p>今回は Chromium の機能である net-export を使用して、Chromium Edge のネットワーク レベルのイベントや状態に関する詳細情報を確認する方法を紹介します。<br>サポートにお問い合せいただいたときにも、今回の手順でログを取得いただくこともありますので、以下を参考にしていただければと思います。</p>
 <hr>
 <h2 id="ログの取得方法"><a href="#ログの取得方法" class="headerlink" title="ログの取得方法"></a>ログの取得方法</h2><ol>
-<li><p>Microsoft Edge を起動し、アドレス バーに edge://net-export/ を入力してページを開きます。</p>
+<li><p>Microsoft Edge を起動し、アドレス バーに edge:&#x2F;&#x2F;net-export&#x2F; を入力してページを開きます。</p>
 </li>
 <li><p>OPTIONS で、[Include raw bytes (will include cookies and credentials)] をオンにします。<br><img src="/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/net-export1.png" alt="ログ取得の設定"></p>
 </li>
@@ -140,7 +140,7 @@
 <hr>
 <h2 id="保存したログの確認方法"><a href="#保存したログの確認方法" class="headerlink" title="保存したログの確認方法"></a>保存したログの確認方法</h2><p>上記の手順で取得した json ファイルは、以下のようにして任意の PC で表示できます。</p>
 <ol>
-<li><p>Microsoft Edge を起動し、<a target="_blank" rel="noopener" href="https://netlog-viewer.appspot.com/">https://netlog-viewer.appspot.com/</a> を開きます。<br>※ <a target="_blank" rel="noopener" href="https://chromium.googlesource.com/catapult/+/refs/heads/main/netlog_viewer">netlog-viewer</a> は、クライアント (ブラウザー) 上だけで json ファイルを解析して視覚化します。外部へデータを送信することはありません。</p>
+<li><p>Microsoft Edge を起動し、<a href="https://netlog-viewer.appspot.com/">https://netlog-viewer.appspot.com/</a> を開きます。<br>※ <a href="https://chromium.googlesource.com/catapult/+/refs/heads/main/netlog_viewer">netlog-viewer</a> は、クライアント (ブラウザー) 上だけで json ファイルを解析して視覚化します。外部へデータを送信することはありません。</p>
 </li>
 <li><p>[ファイルの選択] をクリックして json ファイルのパスを指定します。<br><img src="/jpbrowsers/internet-explorer-microsoft-edge/how-to-use-net-export/net-export-view1.png" alt="表示するログ ファイルの選択"></p>
 </li>
@@ -163,7 +163,7 @@
 </li>
 <li><p>Alt-Svc<br>代替サービス マッピングに関する情報を表示します。</p>
 </li>
-<li><p>HTTP/2<br>HTTP/2 セッションと代替サービス マッピングのログを表示します。</p>
+<li><p>HTTP&#x2F;2<br>HTTP&#x2F;2 セッションと代替サービス マッピングのログを表示します。</p>
 </li>
 <li><p>QUIC<br>Quick UDP Internet Connections（QUIC）に関する情報を表示します。これは、TCP を使用する接続指向のウェブアプリを最適化するネットワーク プロトコル（試験運用中）です。</p>
 </li>
@@ -171,7 +171,7 @@
 </li>
 <li><p>Cache<br>キャッシュされたエントリと統計情報のリストを表示します。</p>
 </li>
-<li><p>Modules<br>アクティブな Edge / Chrome 拡張機能とアプリのリストを表示します。</p>
+<li><p>Modules<br>アクティブな Edge &#x2F; Chrome 拡張機能とアプリのリストを表示します。</p>
 </li>
 <li><p>Prerender<br>アクティブな事前レンダリング ウェブサイトとその履歴を表示します。</p>
 </li>
@@ -293,7 +293,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2025 Developer Support Internet Japan<br>
+      &copy; 2026 Developer Support Internet Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
