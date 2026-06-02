@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, Developer Support Internet Japan</rights>
   <subtitle>日本マイクロソフトの Microsoft Edge / Internet Explorer に関するサポート情報のブログです。</subtitle>
   <title>Japan Browsers Support Team Blog</title>
-  <updated>2026-05-21T04:56:53.524Z</updated>
+  <updated>2026-06-02T06:09:44.947Z</updated>
   <entry>
     <author>
       <name>Developer Support Internet Japan</name>
@@ -29,7 +29,7 @@
 <p>今回は、弊社サポートサービスにトラブルシューティングのお問い合わせをいただく際に、事前にご用意いただきたい情報についてご紹介します。<br>これらの情報をあらかじめご提供いただくことで、現象や環境の]]>
     </summary>
     <title>Edge の基本的な情報の採取について</title>
-    <updated>2026-05-21T04:56:53.524Z</updated>
+    <updated>2026-06-02T06:09:44.947Z</updated>
   </entry>
   <entry>
     <author>
@@ -48,7 +48,7 @@
       <![CDATA[<p><font color="red">2023&#x2F;05&#x2F;23 本記事公開</font><br><font color="red">2023&#x2F;08&#x2F;28 更新 : WSUS による WebView2 Runtime の更新制御を追記しました]]>
     </summary>
     <title>WebView2 のよくあるご質問</title>
-    <updated>2026-05-21T04:56:53.549Z</updated>
+    <updated>2026-06-02T06:09:44.972Z</updated>
   </entry>
   <entry>
     <author>
@@ -66,7 +66,7 @@
       <![CDATA[<p>更新履歴:<br><a href="#2023-01-06-appendix">2023&#x2F;01&#x2F;06 更新: UpdateDefault によって WebView2 の更新制御が行えなくなった旨</a><br><a href="#2023-04-27-a]]>
     </summary>
     <title>Microsoft Edge の更新制御とサポート範囲について</title>
-    <updated>2026-05-21T04:56:53.537Z</updated>
+    <updated>2026-06-02T06:09:44.960Z</updated>
   </entry>
   <entry>
     <author>
@@ -86,7 +86,7 @@
       <![CDATA[<p><font color="red">2020&#x2F;8&#x2F;7 更新 : ブラウザーのキャッシュが利用されてキャプチャーに記録されないことを避けるために、InPrivate ブラウズをご利用いただく方法をご案内していますが、InPrivate ブラウズをご利用いた]]>
     </summary>
     <title>Wireshark による New Microsoft Edge のトレース取得方法</title>
-    <updated>2026-05-21T04:56:53.515Z</updated>
+    <updated>2026-06-02T06:09:44.940Z</updated>
   </entry>
   <entry>
     <author>
@@ -108,7 +108,7 @@
 <h2 id="目次"><a href="#目次" class="headerli]]>
     </summary>
     <title>Edge のよくあるご質問</title>
-    <updated>2026-05-21T04:56:53.528Z</updated>
+    <updated>2026-06-02T06:09:44.950Z</updated>
   </entry>
   <entry>
     <author>
@@ -126,7 +126,7 @@
       <![CDATA[<p>更新履歴:<br>2021&#x2F;05&#x2F;14 新規<br>2021&#x2F;05&#x2F;19 更新<br>2021&#x2F;06&#x2F;15 更新<br>2021&#x2F;06&#x2F;23 更新<br>2021&#x2F;06&#x2F;30]]>
     </summary>
     <title>IE モードのよくあるご質問</title>
-    <updated>2026-05-21T04:56:53.542Z</updated>
+    <updated>2026-06-02T06:09:44.965Z</updated>
   </entry>
   <entry>
     <author>
@@ -147,7 +147,7 @@
 <p>Microsoft は Internet Explorer (]]>
     </summary>
     <title>Internet Explorer から Microsoft Edge への移行ガイドライン</title>
-    <updated>2026-05-21T04:56:53.535Z</updated>
+    <updated>2026-06-02T06:09:44.958Z</updated>
   </entry>
   <entry>
     <author>
@@ -166,7 +166,7 @@
       <![CDATA[<p>更新履歴:<br><a href="#%E3%83%AD%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%AF%E3%81%AB%E5%A4%B1%E6%95%97%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%]]>
     </summary>
     <title>Microsoft Edge のロールバック方法について</title>
-    <updated>2026-05-21T04:56:53.538Z</updated>
+    <updated>2026-06-02T06:09:44.962Z</updated>
   </entry>
   <entry>
     <author>
@@ -188,7 +188,7 @@
 <p>実は Microsoft Edge は Linux 版もあることはご存じでしょうか？<br>例えば <a href="https://www.microsoft.com/en-us/edge/]]>
     </summary>
     <title>Microsoft Edge on Linux で SSL Key を設定してネットワークトレースを取得する</title>
-    <updated>2026-05-21T04:56:53.485Z</updated>
+    <updated>2026-06-02T06:09:44.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -208,7 +208,7 @@
 <p>本記事は Technet Blog の更新停止に伴い、もともとばらばらに存在していた]]>
     </summary>
     <title>.NET Framework で TLS 1.1 および TLS 1.2 を有効化する方法 - まとめ -</title>
-    <updated>2026-05-21T04:56:53.521Z</updated>
+    <updated>2026-06-02T06:09:44.944Z</updated>
   </entry>
   <entry>
     <author>
@@ -230,7 +230,7 @@
 <p]]>
     </summary>
     <title>新しい Microsoft Edge での file プロトコルの制限について</title>
-    <updated>2026-05-21T04:56:53.486Z</updated>
+    <updated>2026-06-02T06:09:44.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -250,7 +250,7 @@
     <title>
       <![CDATA[<Career><第二弾> インターンから見た Microsoft と Developer Support Internet (DSI) チーム (2021)]]>
     </title>
-    <updated>2026-05-21T04:56:53.485Z</updated>
+    <updated>2026-06-02T06:09:44.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -271,7 +271,7 @@
     <title>
       <![CDATA[<Career><第一弾> Developer Support Internet (DSI) ってどのような製品の技術サポートをしているの？]]>
     </title>
-    <updated>2026-05-21T04:56:53.485Z</updated>
+    <updated>2026-06-02T06:09:44.915Z</updated>
   </entry>
   <entry>
     <author>
@@ -292,7 +292,7 @@
 <p>サイトにアクセスした際に、Edge や IE モードなど指定したブラウザでページを表示させるために設定する <strong>Enterprise Mode Site List (以下、サイトリスト)</strong> に関連して、<br]]>
     </summary>
     <title>Enterprise Mode Site List (サイトリスト) のお問い合わせの調査に必要な基本的なログ情報について</title>
-    <updated>2026-05-21T04:56:53.531Z</updated>
+    <updated>2026-06-02T06:09:44.954Z</updated>
   </entry>
   <entry>
     <author>
@@ -311,7 +311,7 @@
 <p>今回は Chromium の機能である net-export を使用して、Chromium Edge のネットワーク レベルのイベントや状態に関する詳細情報を確認する方法]]>
     </summary>
     <title>net-export の使い方</title>
-    <updated>2026-05-21T04:56:53.541Z</updated>
+    <updated>2026-06-02T06:09:44.964Z</updated>
   </entry>
   <entry>
     <author>
@@ -331,7 +331,7 @@
 <p>モダンなブラウザーにまだ対応できていないサイトを IE モードで表示させたい場合や、逆にモダンなサイトを IE で開こうとした場合]]>
     </summary>
     <title>Microsoft Edge 組み込みのサイト リスト マネージャーについて</title>
-    <updated>2026-05-21T04:56:53.529Z</updated>
+    <updated>2026-06-02T06:09:44.952Z</updated>
   </entry>
   <entry>
     <author>
@@ -351,7 +351,7 @@
 <p>本日、以下の情報が公開されました。<br><span style="color: #ff0000;font-weight:bold;">FAQ を含め日本語での資料が充実]]>
     </summary>
     <title>Internet Explorer 11 デスクトップ アプリのサポート終了へ! IE モードへの移行を進めましょう!</title>
-    <updated>2026-05-21T04:56:53.545Z</updated>
+    <updated>2026-06-02T06:09:44.968Z</updated>
   </entry>
   <entry>
     <author>
@@ -369,7 +369,7 @@
       <![CDATA[<h2 id="更新履歴-2020-9-9-更新-今後に関する最新情報を追記しました。2020-10-28-更新-Update-for-Removal-of-Adobe-Flash-Player-がリリースされました。2020-10-30-更新-Flash-のブロックに関して追記]]>
     </summary>
     <title>Internet Explorer および Microsoft Edge での Flash の今後の対応について</title>
-    <updated>2026-05-21T04:56:53.535Z</updated>
+    <updated>2026-06-02T06:09:44.958Z</updated>
   </entry>
   <entry>
     <author>
@@ -388,7 +388,7 @@
 <p>近頃、「いつのまにか IE で表示されなくなり、新しい Microsoft Edge でサイトが表示されるようになった」とお問い合わせを頂くことがあります。<]]>
     </summary>
     <title>IE で開いていたページが Microsoft Edge にリダイレクトされる動作について</title>
-    <updated>2026-05-21T04:56:53.507Z</updated>
+    <updated>2026-06-02T06:09:44.935Z</updated>
   </entry>
   <entry>
     <author>
@@ -408,6 +408,6 @@
 <p>今回は、自社開発などで Microsoft Store に登録されていない Microsoft Edge (Chromium) の拡張機能を、社内で自動展開する方法について紹介します。拡張機能のサンプルは <a href="https://doc]]>
     </summary>
     <title>自社開発した Microsoft Edge (Chromium) の拡張機能を社内で自動展開する方法</title>
-    <updated>2026-05-21T04:56:53.537Z</updated>
+    <updated>2026-06-02T06:09:44.960Z</updated>
   </entry>
 </feed>
